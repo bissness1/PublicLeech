@@ -44,7 +44,7 @@ class Config:
         get_config("FREE_USER_MAX_FILE_SIZE", 50000000)
     )
     # chunk size that should be used with requests
-    CHUNK_SIZE = int(get_config("CHUNK_SIZE", 128))
+    CHUNK_SIZE = int(get_config("CHUNK_SIZE", "128"))
     # default thumbnail to be used in the videos
     DEF_THUMB_NAIL_VID_S = get_config(
         "DEF_THUMB_NAIL_VID_S",
